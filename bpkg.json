@@ -1,5 +1,5 @@
 {
-  "name": "instagram-follower-fetcher",
+  "name": "fetchFollower",
   "version": "0.0.1",
   "description": "A simple Node.js script to fetch Instagram followers count.",
   "scripts": [ "fetchfollower.sh" ],
