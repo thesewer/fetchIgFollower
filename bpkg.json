@@ -6,7 +6,7 @@
   "license": "ISC",
   "install": "bpkg run install",
   "commands": {
-    "install": "mkdir -p ${PREFIX:-/usr/local}/{bin,share/man/man1} && cp index.mjs ${HOME}/deps/fetchFollower/{index.mjs,package.json,readme.md} && cp fetchfollower.sh ${PREFIX:-/usr/local}/bin/fetchfollower.sh && chmod +x ${PREFIX:-/usr/local}/bin/fetchfollower.sh",
+    "install": "mkdir -p ${PREFIX:-/usr/local}/{bin,share/man/man1} && cp {index.mjs,package.json} ${HOME}/deps/fetchFollower/{index.mjs,package.json} && cp fetchfollower.sh ${PREFIX:-/usr/local}/bin/fetchfollower.sh && chmod +x ${PREFIX:-/usr/local}/bin/fetchfollower.sh",
     "lint": "shellcheck **/*.sh",
     "test": "./test.sh"
   }
