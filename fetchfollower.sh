@@ -1,1 +1,1 @@
-npm start
+eval 'npm start'
