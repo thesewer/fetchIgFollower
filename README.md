@@ -14,7 +14,7 @@ git clone git@github.com:thesewer/fetchFollower.git
 gh repo clone thesewer/fetchFollower
 ```
 
-* https (CURL)
+* https
 
 ```sh
 git clone --depth=1 https://github.com/thesewer/fetchFollower.git ~/fetchFollower
