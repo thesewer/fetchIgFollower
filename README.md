@@ -2,6 +2,11 @@
 
 ### install
 
+* ssh
+
 ```sh
-bpkg install thesewer/fetchFollower -g
+git@github.com:thesewer/fetchFollower.git
 ```
+
+* gh
+  
