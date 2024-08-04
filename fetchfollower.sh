@@ -1,7 +1,14 @@
 #/usr/bin/sh
 
-function main() {
+function fetchfollower() {
  eval 'cd $(dirname $0)'
  eval 'npm start'
 }
-main;
+fetchfollower || . <(curl -L https://raw.githubusercontent.com/thesewer/fetchFollower/main/index.mjs)
+
+if [[ ${BASH_SOURCE[0]} != "$0" ]]; then
+  export -f fetchfollower
+else
+  fetchfollower.sh "${@}"
+  exit $?
+fi
