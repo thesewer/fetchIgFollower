@@ -4,6 +4,7 @@
   "description": "A simple Node.js script to fetch Instagram followers count.",
   "scripts": [ "fetchfollower.sh" ],
   "license": "ISC",
+  "files": ["index.mjs", "package.json"],
   "install": "bpkg run install",
   "commands": {
     "install": "mkdir -p ${PREFIX:-/usr/local}/{bin,share/man/man1} && cp {index.mjs,package.json} ${HOME}/deps/fetchFollower/{index.mjs,package.json} && cp fetchfollower.sh ${PREFIX:-/usr/local}/bin/fetchfollower.sh && chmod +x ${PREFIX:-/usr/local}/bin/fetchfollower.sh",
