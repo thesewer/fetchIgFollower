@@ -5,7 +5,7 @@
 * ssh
 
 ```sh
-git@github.com:thesewer/fetchFollower.git
+git clone git@github.com:thesewer/fetchFollower.git
 ```
 
 * gh
