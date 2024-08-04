@@ -1,0 +1,14 @@
+{
+  "name": "instagram-follower-fetcher",
+  "version": "0.0.1",
+  "description": "A simple Node.js script to fetch Instagram followers count.",
+  "scripts": [ "fetchfollower.sh" ],
+  "license": "ISC",
+  "install": "bpkg run install",
+  "commands": {
+    "install": "mkdir -p ${PREFIX:-/usr/local}/{bin,share/man/man1} && cp fetchfollower.sh ${PREFIX:-/usr/local}/bin/fetchfollower.sh",
+    "lint": "shellcheck **/*.sh",
+    "test": "./test.sh"
+  }
+}
+
