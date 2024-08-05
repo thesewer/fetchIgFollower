@@ -1,5 +1,6 @@
 import axios from 'axios';
 import cheerio from 'cheerio';
+import readline from 'node:readline';
 
 async function fetchInstagramFollowers(targetUsername) {
   try {
@@ -25,5 +26,13 @@ async function fetchInstagramFollowers(targetUsername) {
     console.error('Error fetching followers:', error);
   }
 }
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
 
-fetchInstagramFollowers('target_username');
+rl.question('Pilih username yang ingin di stalk: ', username => {
+  fetchInstagramFollowers(username);
+  rl.close();
+});
+
