@@ -1,8 +1,8 @@
 #/usr/bin/sh
 # for Ztmexluis installation scripts
 
-function fetchfollower() {
+function fetchIgfollower() {
  eval 'cd $(dirname $0)'
  eval 'npm start'
 }
-fetchfollower
+fetchIgfollower
