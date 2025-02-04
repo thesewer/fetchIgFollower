@@ -1,5 +1,5 @@
 import axios from 'axios';
-import cheerio from 'cheerio';
+import { load } from 'cheerio';
 import readline from 'node:readline';
 
 async function fetchInstagramFollowers(targetUsername) {
@@ -12,7 +12,7 @@ async function fetchInstagramFollowers(targetUsername) {
     }
 
     const html = response.data;
-    const $ = cheerio.load(html);
+    const $ = load(html);
     const metaDescription = $('meta[property="og:description"]').attr('content');
     const followersMatch = metaDescription.match(/(\d+(,\d+)*) Followers/);
 
